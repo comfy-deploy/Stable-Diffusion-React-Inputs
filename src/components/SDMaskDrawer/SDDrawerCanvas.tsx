@@ -1,11 +1,9 @@
-"use client";
-
-import { ImgView } from "@/components/SDInputs/SDImageInput";
-import { brushPreview } from "@/components/SDInputs/SDMaskDrawerUtils/brushPreview";
-import { fabricImage } from "@/components/SDInputs/SDMaskDrawerUtils/fabricImage";
 import { fabric } from "fabric";
 import { forwardRef, useEffect, useImperativeHandle, useRef } from "react";
 import "./main.css";
+import { ImgView } from "../SDImageInput";
+import { fabricImage } from "../SDMaskDrawerUtils/fabricImage";
+import { brushPreview } from "../SDMaskDrawerUtils/brushPreview";
 
 type SDMaskDrawerProps = {
   image: ImgView;
@@ -121,7 +119,7 @@ export const SDDrawerCanvas = forwardRef(
         }
       });
 
-      brushPreview(canvas, canvasBrush.current, minZoom);
+      brushPreview(canvas, canvasBrush.current!, minZoom);
 
       return () => {
         canvas.dispose();

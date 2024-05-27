@@ -1,8 +1,7 @@
-"use client";
-import { EditAttention } from "@/components/SDInputs/editAttention";
-import { Label } from "@/components/ui/label";
-import { Textarea, TextareaProps } from "@/components/ui/textarea";
 import React, { useEffect } from "react";
+import { Textarea, TextareaProps } from "./ui/textarea";
+import { EditAttention } from "./editAttention";
+import { Label } from "./ui/label";
 
 type SDTextareaProps = TextareaProps & {
   label?: string;

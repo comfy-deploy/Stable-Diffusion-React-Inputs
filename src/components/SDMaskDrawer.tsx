@@ -1,16 +1,9 @@
-"use client";
-
-import { ImgView } from "@/components/SDInputs/SDImageInput";
-import { DrawerMenu } from "@/components/SDInputs/SDMaskDrawer/DrawerMenu";
-import { SDDrawerCanvas } from "@/components/SDInputs/SDMaskDrawer/SDDrawerCanvas";
-import { Button } from "@/components/docs/Button";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
 import { useRef } from "react";
+import { ImgView } from "./SDImageInput";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
+import { SDDrawerCanvas } from "./SDMaskDrawer/SDDrawerCanvas";
+import { DrawerMenu } from "./SDMaskDrawer/DrawerMenu";
+import { Button } from "./ui/button";
 
 type SDMaskDrawerProps = {
   image: ImgView;

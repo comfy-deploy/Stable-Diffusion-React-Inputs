@@ -1,8 +1,6 @@
-"use client";
-
-import { Input, InputProps } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import React from "react";
+import { Label } from "./ui/label";
+import { Input, InputProps } from "./ui/input";
 
 type SDTextareaProps = InputProps & {
   label?: string;

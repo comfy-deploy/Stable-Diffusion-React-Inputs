@@ -1,5 +1,5 @@
-import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Brush, Eraser } from "lucide-react";
+import { ToggleGroup, ToggleGroupItem } from "../ui/toggleGroup";
 
 export function DrawerMenu() {
   function onSelectBrush() {

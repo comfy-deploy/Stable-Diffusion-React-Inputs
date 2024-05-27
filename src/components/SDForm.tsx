@@ -1,6 +1,5 @@
-"use client";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import React, { FormEvent, ReactNode } from "react";
+import { ScrollArea } from "./ui/scrollarea";
 
 type SDFormProps = {
   actionArea?: any;

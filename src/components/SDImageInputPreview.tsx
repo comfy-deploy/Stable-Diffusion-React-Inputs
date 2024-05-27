@@ -1,14 +1,9 @@
-import { ImgView } from "@/components/SDInputs/SDImageInput";
-import { SDMaskDrawer } from "@/components/SDInputs/SDMaskDrawer";
-import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
 import { Pencil } from "lucide-react";
 import { useState } from "react";
+import { Button } from "./ui/button";
+import { SDMaskDrawer } from "./SDMaskDrawer";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "./ui/dialog";
+import { ImgView } from "./SDImageInput";
 
 type SDImageInputPreviewProps = {
   image: ImgView;

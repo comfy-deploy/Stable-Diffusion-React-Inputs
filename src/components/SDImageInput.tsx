@@ -1,29 +1,19 @@
-"use client";
-
-import { SDImageInputPreview } from "@/components/SDInputs/SDImageInputPreview";
-import { Button, buttonVariants } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 import { Eye, Paperclip, Trash } from "lucide-react";
-import React, {
+import {
   ChangeEvent,
   DragEvent,
-  ReactElement,
   RefObject,
   useEffect,
-  useImperativeHandle,
   useMemo,
   useRef,
   useState,
 } from "react";
+import { Label } from "./ui/label";
+import { Input } from "./ui/input";
+import { SDImageInputPreview } from "./SDImageInputPreview";
+import { Table, TableBody, TableCell, TableRow } from "./ui/table";
+import { Button, buttonVariants } from "./ui/button";
 
 type SDImageInputProps = {
   label?: string;
@@ -174,7 +164,7 @@ function ListView({ viewList, onDelete, onMaskChange }: listViewProps) {
       )}
       <Table>
         <TableBody>
-          {viewList.map((item, index) => {
+          {viewList.map((item) => {
             return (
               <TableRow key={item.imgName} className="w-full ">
                 <TableCell className="font-medium py-2 w-full flex justify-between items-center">
